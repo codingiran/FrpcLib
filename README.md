@@ -7,8 +7,7 @@
 
 ## Requirements
 
-iOS 13+, macOS 10.15+
-Swift 5.0+
+iOS 13+, macOS 10.15+, Swift 5.0+
 
 ## Installation
 
