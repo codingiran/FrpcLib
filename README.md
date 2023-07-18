@@ -16,7 +16,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ### SwiftPM
 
 ```
-https://github.com/codingiran/SystemExtensionKit.git
+https://github.com/codingiran/FrpcLib.git
 ```
 
 ### Cocoapods
