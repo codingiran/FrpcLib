@@ -5,11 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/FrpcLib.svg?style=flat)](https://cocoapods.org/pods/FrpcLib)
 [![Platform](https://img.shields.io/cocoapods/p/FrpcLib.svg?style=flat)](https://cocoapods.org/pods/FrpcLib)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
+
+iOS 13+, macOS 10.15+
+Swift 5.0+
 
 ## Installation
 
