@@ -72,7 +72,7 @@ public class FrpLogListener: NSObject, LibfrpFrpLogListenerProtocol {
     var logLocale: String
     var logListener: (String) -> Void
 
-    init(logLocale: String, logListener: @escaping (String) -> Void) {
+    public init(logLocale: String, logListener: @escaping (String) -> Void) {
         self.logLocale = logLocale
         self.logListener = logListener
     }
