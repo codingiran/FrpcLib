@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Libfrpc
 
 // Enforce minimum Swift version for all platforms and build systems.
 #if swift(<5.5)
@@ -14,9 +15,6 @@ import Foundation
 
 /// Current FrpcLib version. Necessary since SPM doesn't use dynamic libraries. Plus this will be more accurate.
 let version = "0.5.1"
-
-#if canImport(Libfrpc)
-import Libfrpc
 
 public enum Frpc {
     /// FRP 版本号
@@ -86,5 +84,3 @@ public class FrpLogListener: NSObject, LibfrpFrpLogListenerProtocol {
         logListener(log)
     }
 }
-
-#endif
