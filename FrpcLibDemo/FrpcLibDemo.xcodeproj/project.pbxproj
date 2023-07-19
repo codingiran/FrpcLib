@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C88F8472A6785D900D1D06A /* FrpcLib in Frameworks */ = {isa = PBXBuildFile; productRef = 3C88F8462A6785D900D1D06A /* FrpcLib */; };
 		3CE0FEC52A6521C7002013F8 /* FrpcLibDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE0FEC42A6521C7002013F8 /* FrpcLibDemoApp.swift */; };
 		3CE0FEC72A6521C7002013F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE0FEC62A6521C7002013F8 /* ContentView.swift */; };
 		3CE0FEC92A6521C7002013F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE0FEC82A6521C7002013F8 /* Assets.xcassets */; };
 		3CE0FECD2A6521C7002013F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE0FECC2A6521C7002013F8 /* Preview Assets.xcassets */; };
-		3CE0FEDD2A652738002013F8 /* FrpcLib in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE0FEDC2A652738002013F8 /* FrpcLib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C88F8442A67844200D1D06A /* libBasebandManager.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libBasebandManager.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/usr/lib/libBasebandManager.tbd; sourceTree = DEVELOPER_DIR; };
 		3CE0FEC12A6521C7002013F8 /* FrpcLibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrpcLibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE0FEC42A6521C7002013F8 /* FrpcLibDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrpcLibDemoApp.swift; sourceTree = "<group>"; };
 		3CE0FEC62A6521C7002013F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3CE0FEC82A6521C7002013F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CE0FECA2A6521C7002013F8 /* FrpcLibDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FrpcLibDemo.entitlements; sourceTree = "<group>"; };
 		3CE0FECC2A6521C7002013F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3CE0FEDB2A65263B002013F8 /* FrpcLib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FrpcLib; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CE0FEDD2A652738002013F8 /* FrpcLib in Frameworks */,
+				3C88F8472A6785D900D1D06A /* FrpcLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +39,6 @@
 		3CE0FEB82A6521C6002013F8 = {
 			isa = PBXGroup;
 			children = (
-				3CE0FEDA2A65263B002013F8 /* Packages */,
 				3CE0FEC32A6521C7002013F8 /* FrpcLibDemo */,
 				3CE0FEC22A6521C7002013F8 /* Products */,
 				3CE0FED52A652229002013F8 /* Frameworks */,
@@ -77,16 +76,9 @@
 		3CE0FED52A652229002013F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C88F8442A67844200D1D06A /* libBasebandManager.tbd */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3CE0FEDA2A65263B002013F8 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				3CE0FEDB2A65263B002013F8 /* FrpcLib */,
-			);
-			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,7 +98,7 @@
 			);
 			name = FrpcLibDemo;
 			packageProductDependencies = (
-				3CE0FEDC2A652738002013F8 /* FrpcLib */,
+				3C88F8462A6785D900D1D06A /* FrpcLib */,
 			);
 			productName = FrpcLibDemo;
 			productReference = 3CE0FEC12A6521C7002013F8 /* FrpcLibDemo.app */;
@@ -136,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 3CE0FEB82A6521C6002013F8;
+			packageReferences = (
+				3C88F8452A6785D900D1D06A /* XCRemoteSwiftPackageReference "FrpcLib" */,
+			);
 			productRefGroup = 3CE0FEC22A6521C7002013F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -378,9 +373,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		3C88F8452A6785D900D1D06A /* XCRemoteSwiftPackageReference "FrpcLib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/codingiran/FrpcLib.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		3CE0FEDC2A652738002013F8 /* FrpcLib */ = {
+		3C88F8462A6785D900D1D06A /* FrpcLib */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 3C88F8452A6785D900D1D06A /* XCRemoteSwiftPackageReference "FrpcLib" */;
 			productName = FrpcLib;
 		};
 /* End XCSwiftPackageProductDependency section */

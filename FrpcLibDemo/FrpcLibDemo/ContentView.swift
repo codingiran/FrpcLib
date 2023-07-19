@@ -9,15 +9,18 @@ import FrpcLib
 import SwiftUI
 
 struct ContentView: View {
+    @State private var version = ""
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(version)
         }
         .padding()
-        .onAppear {}
+        .onAppear {
+            version = Frpc.version
+        }
     }
 }
 
