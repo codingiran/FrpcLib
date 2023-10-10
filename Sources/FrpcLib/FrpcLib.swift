@@ -5,5 +5,5 @@ import Libfrpc
 #error("FrpcLib doesn't support Swift versions below 5.5.")
 #endif
 
-/// Current FrpcLib version 0.51.0. Necessary since SPM doesn't use dynamic libraries. Plus this will be more accurate.
-let version = "0.51.0"
+/// Current FrpcLib version 0.51.3. Necessary since SPM doesn't use dynamic libraries. Plus this will be more accurate.
+let version = "0.51.3"

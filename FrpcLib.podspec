@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FrpcLib'
-  s.version          = '0.51.0'
+  s.version          = '0.51.3'
   s.summary          = 'Frpc lib for Apple platform.'
 
 # This description is used to generate tags and improve search results.
